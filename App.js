@@ -10,6 +10,7 @@ import {
 import React, {useState} from 'react';
 import colors from './src/utils/colors';
 import Form from './src/components/Form';
+import Footer from './src/components/Footer';
 
 LogBox.ignoreAllLogs();
 
@@ -18,7 +19,7 @@ export default function App() {
   const [interest, setInterest] = useState(null);
   const [months, setMonths] = useState(null);
 
-  const onSubmit = () => {
+  const calculate = () => {
     console.log('capital ->', capital);
     console.log('interest ->', interest);
     console.log('months ->', months);
@@ -40,10 +41,7 @@ export default function App() {
         <Text>Resultado</Text>
       </View>
 
-      <View>
-        <Button title="Enviar" onPress={onSubmit} />
-        <Text>Footer</Text>
-      </View>
+      <Footer calculate={calculate} />
     </>
   );
 }
