@@ -7,7 +7,7 @@ import {
   LogBox,
   Button,
 } from 'react-native';
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import colors from './src/utils/colors';
 import Form from './src/components/Form';
 import Footer from './src/components/Footer';
@@ -21,6 +21,11 @@ export default function App() {
   const [months, setMonths] = useState(null);
   const [total, setTotal] = useState(null);
   const [errorMessage, setErrorMessage] = useState(null);
+
+  useEffect(() => {
+    if (capital && interest && months) calculate();
+    else reset();
+  }, [capital, interest, months]);
 
   const calculate = () => {
     reset();
