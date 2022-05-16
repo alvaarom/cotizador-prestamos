@@ -1,7 +1,5 @@
 Aplicacion para cotizar prestamos.
 
-![image](https://user-images.githubusercontent.com/65419924/168693341-15726cb9-f731-4ee7-bc12-a97130c40df5.png)
-
 Creada con:
 
 - React Native CLI
