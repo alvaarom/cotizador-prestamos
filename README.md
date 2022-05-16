@@ -1,6 +1,6 @@
 Aplicacion para cotizar prestamos.
 
-![image](https://user-images.githubusercontent.com/65419924/168694479-8c042cf4-5768-4c55-ab40-2c94929e326f.png)
+![Captura-cotizadorprestamos](https://user-images.githubusercontent.com/65419924/168694505-41da194a-c266-4bed-a510-6680633a318e.PNG)
 
 Creada con:
 
